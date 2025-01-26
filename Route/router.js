@@ -22,6 +22,10 @@ const updateProduct = require('../Controller/product_update_control');
 router.post('/updateProduct', updateProduct.updateProductController)
 
 
+const productGet = require('../Controller/product_get_control');
+router.get('/productGet', productGet.fetchProducts)
+
+
 const { registerUser } = require('../Controller/userRegisterController');
 router.post('/Eregister', registerUser);
 
